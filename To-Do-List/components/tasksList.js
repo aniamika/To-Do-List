@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         width: 60,
         height: 60,
         borderRadius: 100/2,
-        backgroundColor: '#D7E7A9',
+        backgroundColor: '#fffacd',
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -46,8 +46,8 @@ const styles = StyleSheet.create({
         right: 0,
     },
     button: {
-        color: 'gray',
-        fontSize: 30,
+        color: '#798291',
+        fontSize: 28,
     },
 })
 
