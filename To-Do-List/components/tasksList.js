@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Text, View, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text, View, StyleSheet } from 'react-native';
 
 export default function TasksList({ navigation }) {
 
@@ -10,9 +10,9 @@ export default function TasksList({ navigation }) {
     return (
         <View style={styles.tasksList}>
             <Text>Tasks List screen</Text>
-            <View style={styles.buttonContainer}>
-                <Button title='+' onPress={createNewTask} color='#D7E7A9' />
-            </View>
+            <TouchableOpacity onPress={createNewTask} style={styles.buttonContainer}>
+                <Text style={styles.button}>+</Text>
+            </TouchableOpacity>
         </View>
     );
 }
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     tasksList: {
         flex: 1, 
         justifyContent: 'center', 
-        alignItems: 'center', 
+        alignItems: 'center',
         backgroundColor: '#D3C0F9',
     },
     buttonContainer: {
@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
         height: 60,
         borderRadius: 100/2,
         backgroundColor: '#D7E7A9',
-        textAlign: 'center',
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -38,11 +37,17 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.30,
         shadowRadius: 4.65,
         elevation: 8,
+        margin: 25,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         position: 'absolute',
         bottom: 0,
         right: 0,
-        margin: 25,
-        alignItems: 'center',
+    },
+    button: {
+        color: 'gray',
+        fontSize: 30,
     },
 })
 
