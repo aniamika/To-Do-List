@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import * as React from "react";
+import { Text, View, StyleSheet } from "react-native";
 
 export default function NewTask() {
     return (
@@ -11,9 +11,9 @@ export default function NewTask() {
 
 const styles = StyleSheet.create({
     newTask: {
-        flex: 1, 
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        backgroundColor: '#fffacd',
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#F6F7FC",
     },
 })
