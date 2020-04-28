@@ -1,23 +1,7 @@
 
 import * as React from "react";
 import { useState } from "react";
-import { Text, View, StyleSheet, Image } from "react-native";
-
-export default function Home() {
-    const [name, setName] = useState("Ania");
-    // setName- it is the function and will be use to update the name
-    const [person, setPerson] = useState({surname: "Mika", age: 30 });
-
-    return (
-        <View style={styles.homeBackground}>
-            <View style={styles.home}>
-            <Image source={{uri: "https://avatars0.githubusercontent.com/u/28620350?s=400&amp;u=dd43553660c4e14f54435662661ec987ee17363c&amp;v=4" }} style={styles.image}/>
-                <Text style={styles.text}>Hello,</Text>
-                <Text style={styles.name}> {name} {person.surname}</Text>
-            </View>
-        </View>
-    );
-}
+import { Text, FC, View, StyleSheet, Image } from "react-native";
 
 const styles = StyleSheet.create({
     homeBackground: {
@@ -62,6 +46,23 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.30,
         shadowRadius: 4.65,
-        elevation: 8,
     }
-})
+});
+
+const Home: FC = () => {
+    const [name, setName] = useState("Ania");
+    // setName- it is the function and will be use to update the name
+    const [person, setPerson] = useState({surname: "Mika", age: 30 });
+
+    return (
+        <View style={styles.homeBackground}>
+            <View style={styles.home}>
+            <Image source={{uri: "https://avatars0.githubusercontent.com/u/28620350?s=400&amp;u=dd43553660c4e14f54435662661ec987ee17363c&amp;v=4" }} style={styles.image}/>
+                <Text style={styles.text}>Hello,</Text>
+                <Text style={styles.name}> {name} {person.surname}</Text>
+            </View>
+        </View>
+    );
+};
+export default Home;
+

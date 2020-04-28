@@ -1,13 +1,6 @@
 import * as React from "react";
-import { Text, View, StyleSheet } from "react-native";
-
-export default function NewTask() {
-    return (
-        <View style={styles.newTask}>
-            <Text>Create new task</Text>
-        </View>
-    );
-}
+import { Text, FC, View, StyleSheet } from "react-native";
+import AddTodo from "../components/addTodo";
 
 const styles = StyleSheet.create({
     newTask: {
@@ -16,4 +9,13 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#F6F7FC",
     },
-})
+});
+
+const NewTask: FC = () => {
+    return (
+        <View style={styles.newTask}>
+            <AddTodo />
+        </View>
+    );
+}
+export default NewTask;

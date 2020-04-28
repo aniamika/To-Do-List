@@ -1,44 +1,7 @@
 import React, { useState } from "react";
-import { TouchableOpacity, Text, View, StyleSheet, FlatList } from "react-native";
+import { TouchableOpacity, FC, Text, View, StyleSheet, FlatList } from "react-native";
 import Header from "../components/header";
 import TodoItem from "../components/todoItem";
-
-export default function TasksList({ navigation }) {
-
-    const createNewTask = () => {
-        navigation.navigate("NewTask");
-    };
-
-    const [todos, setTodos] = useState([
-        { text: "buy coffee", key: "1" },
-        { text: "create an app", key: "2" },
-        { text: "play on the switch", key: "3" },
-    ]);
-
-    const pressHandler = (key) => {
-        setTodos((prevTodos) => {
-            return prevTodos.filter(todo => todo.key != key);
-        })
-    }
-
-    return (
-        <View style={styles.tasksList}>
-            <Header />
-            <View style={styles.list}>
-                <FlatList
-                    data={todos}
-                    renderItem={( {item } ) => (
-                        <TodoItem item={item} pressHandler={pressHandler}/>
-                    )}
-                />
-            </View>
-            <TouchableOpacity onPress={createNewTask} style={styles.buttonContainer}>
-                <Text style={styles.button}>+</Text>
-            </TouchableOpacity>
-        </View>
-    );
-
-}
 
 const styles = StyleSheet.create({
     tasksList: {
@@ -75,5 +38,40 @@ const styles = StyleSheet.create({
     },
 });
 
+const TasksList: FC = ({ navigation }) => {
 
+    const createNewTask = () => {
+        navigation.navigate("NewTask");
+    };
 
+    const [todos, setTodos] = useState([
+        { text: "buy coffee", key: "1" },
+        { text: "create an app", key: "2" },
+        { text: "play on the switch", key: "3" },
+    ]);
+
+    const pressHandler = (key) => {
+        setTodos((prevTodos) => {
+            return prevTodos.filter(todo => todo.key !== key);
+        })
+    }
+
+    return (
+        <View style={styles.tasksList}>
+            <Header />
+            <View style={styles.list}>
+                <FlatList
+                    data={todos}
+                    renderItem={({ item }) => (
+                        <TodoItem item={item} pressHandler={pressHandler}/>
+                    )}
+                />
+            </View>
+            <TouchableOpacity onPress={createNewTask} style={styles.buttonContainer}>
+                <Text style={styles.button}>+</Text>
+            </TouchableOpacity>
+        </View>
+    );
+
+};
+export default TasksList;

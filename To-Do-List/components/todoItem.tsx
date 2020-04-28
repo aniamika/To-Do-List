@@ -1,13 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
-
-export default function TodoItem({ item, pressHandler }) {
-    return (
-        <TouchableOpacity onPress={() => pressHandler(item.key)}>
-            <Text style={styles.item}>{item.text}</Text>
-        </TouchableOpacity>
-    )
-}
+import { StyleSheet, FC, Text, TouchableOpacity } from "react-native";
 
 const styles = StyleSheet.create({
     item: {
@@ -24,4 +16,13 @@ const styles = StyleSheet.create({
         shadowRadius: 2,
         elevation: 5,
     }
-})
+});
+
+const TodoItem: FC = ({ item, pressHandler }) => {
+    return (
+        <TouchableOpacity onPress={() => pressHandler(item.key)}>
+            <Text style={styles.item}>{item.text}</Text>
+        </TouchableOpacity>
+    )
+};
+export default TodoItem;

@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
+import { FC } from "react-native";
 
 import Home from "./screens/home";
 import TasksList from "./screens/tasksList";
@@ -14,33 +15,32 @@ const TasksListStack = createStackNavigator();
 const LastScreenStack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
-function HomeStackScreen() {
+const HomeStackScreen: FC = () => {
   return (
       <HomeStack.Navigator>
         <HomeStack.Screen name="Home" component={Home} />
       </HomeStack.Navigator>
   );
-}
+};
 
-function TasksListStackScreen() {
+const TasksListStackScreen: FC = () => {
   return (
     <TasksListStack.Navigator>
       <TasksListStack.Screen name="TasksList" component={TasksList} />
       <TasksListStack.Screen name="NewTask" component={NewTask} />
     </TasksListStack.Navigator>
   );
-}
+};
 
-function LastScreenStackScreen() {
+const LastScreenStackScreen: FC = () => {
   return (
     <LastScreenStack.Navigator>
       <LastScreenStack.Screen name="LastScreen" component={LastScreen} />
     </LastScreenStack.Navigator>
   );
-}
+};
 
-export default function App() {
-
+const App: FC = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -54,7 +54,6 @@ export default function App() {
                 } else if (route.name === "LastScreen") {
                   iconName = "ios-trophy";
                 }
-                // You can return any component that you like here!
                 return <Ionicons name={iconName} size={size} color={color} />;
               },
             })}
@@ -69,5 +68,5 @@ export default function App() {
       </Tab.Navigator>
     </NavigationContainer>
   );
-
-}
+};
+export default App;

@@ -1,13 +1,5 @@
 import * as React from "react";
-import { StyleSheet, Text, View } from "react-native";
-
-export default function Header() {
-    return (
-        <View style={styles.header}>
-            <Text style={styles.title}>My Todos</Text>
-        </View>
-    )
-}
+import { StyleSheet, FC, Text, View } from "react-native";
 
 const styles = StyleSheet.create({
     header: {
@@ -28,4 +20,13 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "800",
     },
-})
+});
+
+const Header: FC = () => {
+    return (
+        <View style={styles.header}>
+            <Text style={styles.title}>My Todos</Text>
+        </View>
+    )
+};
+export default Header;

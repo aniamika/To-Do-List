@@ -1,14 +1,5 @@
 import * as React from "react";
-import { Text, View, StyleSheet } from "react-native";
-
-
-export default function LastScreen({ navigation }) {
-    return (
-        <View style={styles.lastScreen}>
-        <Text>Last screen</Text>
-        </View>
-    );
-}
+import { Text, FC, View, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     lastScreen: {
@@ -18,3 +9,12 @@ const styles = StyleSheet.create({
         backgroundColor: "#F6F7FC",
     },
 })
+
+const LastScreen: FC = ({ navigation }) => {
+    return (
+        <View style={styles.lastScreen}>
+        <Text>Last screen</Text>
+        </View>
+    );
+}
+export default LastScreen;
