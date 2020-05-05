@@ -1,6 +1,7 @@
 import * as React from "react";
-import { Text, FC, View, StyleSheet } from "react-native";
+import { FC, View, StyleSheet } from "react-native";
 import AddTodo from "../components/addTodo";
+import TasksList from "./tasksList";
 
 const styles = StyleSheet.create({
     newTask: {
@@ -11,10 +12,11 @@ const styles = StyleSheet.create({
     },
 });
 
-const NewTask: FC = () => {
+const NewTask: FC = ({ submitHandler }) => {
+
     return (
         <View style={styles.newTask}>
-            <AddTodo />
+            <AddTodo submitHandler={submitHandler}/>
         </View>
     );
 }

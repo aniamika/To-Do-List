@@ -1,41 +1,34 @@
 import React, { useState } from "react";
-import { TextInput, FC, StyleSheet, View } from "react-native";
+import { TextInput, FC, StyleSheet, View, Button } from "react-native";
 
 const styles = StyleSheet.create({
     input: {
-        display: "flex",
-        width: 90,
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "red",
-        padding: 16,
-        margin: 8,
-        borderRadius: 50,
-        shadowColor: "#000",
-        shadowOffset: { width: 0, height: 1 },
-        shadowOpacity: 0.8,
-        shadowRadius: 2,
-        elevation: 5,
+        paddingVertical: 6,
+        paddingHorizontal: 8,
+        marginBottom: 8,
+        borderBottomWidth: 1,
+        borderBottomColor: "#518AFF",
     }
 });
 
-const AddTodo: FC = () => {
+const AddTodo: FC = ({ submitHandler }) => {
 
     // the text what uset typed in field
     const [text, setText] = useState("");
 
     const changeHandler = (value) => {
-        setText();
+        setText(value);
     };
 
     return (
         <View>
             <TextInput
-                style={StyleSheet.input}
-                placeholder="new task"
-                onChangeText={(value) => changeHandler}
+                style={styles.input}
+                placeholder="add new task"
+                onChangeText={changeHandler}
             />
+            <Button onPress={() => submitHandler(text)} title="submit" color="#518AFF" />
         </View>
-    )
+    );
 };
 export default AddTodo;

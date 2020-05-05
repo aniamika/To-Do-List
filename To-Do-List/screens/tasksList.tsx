@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { TouchableOpacity, FC, Text, View, StyleSheet, FlatList } from "react-native";
 import Header from "../components/header";
 import TodoItem from "../components/todoItem";
+import AddTodo from "../components/addTodo";
+import NewTask from "./newTask";
 
 const styles = StyleSheet.create({
     tasksList: {
@@ -44,22 +46,36 @@ const TasksList: FC = ({ navigation }) => {
         navigation.navigate("NewTask");
     };
 
+    const showCreateNewTask = () => {
+
+    }
+
     const [todos, setTodos] = useState([
-        { text: "buy coffee", key: "1" },
-        { text: "create an app", key: "2" },
-        { text: "play on the switch", key: "3" },
+        { text: "task1", key: "1" },
+        { text: "task2", key: "2" },
+        { text: "task3", key: "3" },
     ]);
 
     const pressHandler = (key) => {
         setTodos((prevTodos) => {
             return prevTodos.filter(todo => todo.key !== key);
-        })
-    }
+        });
+    };
+
+    const submitHandler = (text) => {
+        setTodos((prevTodos) => {
+            return [
+                { text: text, key: Math.random().toString() },
+                ...prevTodos
+            ];
+        });
+    };
 
     return (
         <View style={styles.tasksList}>
             <Header />
             <View style={styles.list}>
+                <AddTodo submitHandler={submitHandler}/>
                 <FlatList
                     data={todos}
                     renderItem={({ item }) => (
@@ -67,9 +83,9 @@ const TasksList: FC = ({ navigation }) => {
                     )}
                 />
             </View>
-            <TouchableOpacity onPress={createNewTask} style={styles.buttonContainer}>
+            {/* <TouchableOpacity onPress={createNewTask} style={styles.buttonContainer}>
                 <Text style={styles.button}>+</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
         </View>
     );
 
