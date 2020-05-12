@@ -1,7 +1,7 @@
 
 import * as React from "react";
 import { useState } from "react";
-import { Text, FC, View, StyleSheet, Image } from "react-native";
+import { Text, FC, View, ScrollView, StyleSheet, Image } from "react-native";
 import { Icon } from "react-native-elements";
 
 const styles = StyleSheet.create({
@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#518AFF",
     },
-    header: {
+    content: {
+        paddingTop: 60,
     },
     text: {
         color: "#798291",
@@ -26,8 +27,9 @@ const styles = StyleSheet.create({
         height: 120,
         alignSelf: "center",
         top: -50,
-        borderRadius: 120/2,
+        position: "absolute",
         backgroundColor: "#518AFF",
+        borderRadius: 120/2,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -43,7 +45,7 @@ const styles = StyleSheet.create({
         marginTop: 90,
         marginRight: 80,
         alignSelf: "stretch",
-        justifyContent: "flex-end",
+        justifyContent: "center",
         padding: 20,
         backgroundColor: "#F6F7FC",
         shadowColor: "#000",
@@ -55,18 +57,47 @@ const styles = StyleSheet.create({
         zIndex: 2,
         position: "relative",
     },
-    icon: {
+    iconPlane: {
         width: 50,
         height: 50,
-        borderRadius: 50/2,
         padding: 10,
-        // borderWidth: 1,
-        // borderColor: "#518AFF",
-        // shadowColor: "#000",
-        // shadowOffset: { width: 0, height: 1 },
-        // shadowOpacity: 0.8,
-        // shadowRadius: 2,
-        // elevation: 5,
+        backgroundColor: "#D04261",
+    },
+    iconBike: {
+        width: 50,
+        height: 50,
+        padding: 10,
+        backgroundColor: "#E2CF7D",
+    },
+    iconPaint: {
+        width: 50,
+        height: 50,
+        padding: 10,
+        backgroundColor: "#FA9EAA",
+    },
+    iconLandscape: {
+        width: 50,
+        height: 50,
+        padding: 10,
+        backgroundColor: "#7DC4CA",
+    },
+    iconPool: {
+        width: 50,
+        height: 50,
+        padding: 10,
+        backgroundColor: "#FAC8BE",
+    },
+    iconPets: {
+        width: 50,
+        height: 50,
+        padding: 10,
+        backgroundColor: "#FAEEC8",
+    },
+    iconDinner: {
+        width: 50,
+        height: 50,
+        padding: 10,
+        backgroundColor: "#43888E",
     },
     iconsContainer: {
         display: "flex",
@@ -75,7 +106,7 @@ const styles = StyleSheet.create({
         justifyContent: "flex-start",
         height: "100%",
         width: 50,
-        right: -45,
+        right: -50,
         top: 50,
         position: "absolute",
     },
@@ -99,54 +130,38 @@ const Home: FC = () => {
     return (
         <View style={styles.homeBackground}>
             <View style={styles.main}>
-                <View style={styles.header}>
-                    <Image source={require("../assets/person.jpg")} style={styles.image}/>
+                <Image source={require("../assets/person.jpg")} style={styles.image}/>
+                <View style={styles.content}>
                     <Text style={styles.text}>Hello,</Text>
                     <Text style={styles.name}> {name} {person.surname}</Text>
+                    <ScrollView>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia faucibus metus, ac auctor metus porta nec. Nam efficitur vehicula consequat. Pellentesque maximus porttitor justo ac bibendum. Integer facilisis feugiat ipsum nec aliquam. Ut ultrices eros nec lorem blandit pulvinar. Curabitur tempus iaculis vestibulum. Nullam ut libero volutpat, ultrices lectus at, porttitor sapien. Duis rutrum egestas nunc, sed feugiat risus porta nec. Curabitur eu quam lectus. Maecenas id ornare ante, id viverra tellus. Vestibulum placerat vel sapien id condimentum. Integer imperdiet lacus sed arcu molestie, sit amet tristique mi consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sapien felis, convallis ut nisl vel, ullamcorper iaculis odio. Integer vel mauris laoreet, sodales lorem vel, elementum leo. Etiam tempus lacus id felis finibus, vitae condimentum est blandit.
+                            Vivamus vitae condimentum tortor, et sollicitudin risus. Donec sagittis mauris a lorem tristique mattis ac a ligula. Vestibulum non lectus lectus. Cras molestie enim non nibh porttitor euismod. Fusce pellentesque urna risus, facilisis consequat dui porttitor a. Sed id condimentum nisi. Vestibulum non pellentesque metus, vel luctus ex. Maecenas mollis id nisl ut venenatis. Donec vulputate lacus mauris, ac tempus ante pretium quis. Praesent lobortis turpis cursus, imperdiet massa vel, placerat sapien. Ut nec neque id tellus pellentesque cursus. Nunc dapibus luctus porttito
+                        </Text>
+                    </ScrollView>
                 </View>
+
                 <View style={styles.iconsContainer}>
                     <View style={styles.iconContainer}>
-                        <Icon name="flight" style={styles.icon} />
-                        {/* <Icon name="location-city" style={styles.icon}/>
-                        <Icon name="palette" style={styles.icon}/>
-                        <Icon name="school" style={styles.icon}/>
-                        <Icon name="spa" style={styles.icon}/>
-                        <Icon name="train" style={styles.icon}/>
-                        <Icon name="videogame-asset" style={styles.icon}/>
-                        <Icon name="toys" style={styles.icon}/>
-                        <Icon name="time-to-leave" style={styles.icon}/>
-                        <Icon name="terrain" style={styles.icon}/>
-                        <Icon name="store" style={styles.icon}/>
-                        <Icon name="subway" style={styles.icon}/>
-                        <Icon name="smoking-rooms" style={styles.icon}/>
-                        <Icon name="snooze" style={styles.icon}/>
-                        <Icon name="shopping-cart" style={styles.icon}/>
-                        <Icon name="shopping-basket" style={styles.icon}/>
-                        <Icon name="settings-phone" style={styles.icon}/>
-                        <Icon name="sentiment-very-satisfied" style={styles.icon}/>
-                        <Icon name="rowing" style={styles.icon}/>
-                        <Icon name="restaurant" style={styles.icon}/>
-                        <Icon name="print" style={styles.icon}/>
-                        <Icon name="radio" style={styles.icon}/>
-                        <Icon name="restaurant-menu" style={styles.icon}/> */}
+                        <Icon name="flight" style={styles.iconPlane} />
                     </View>
                     <View style={styles.iconContainer}>
-                        <Icon name="directions-bike" style={styles.icon} />
+                        <Icon name="directions-bike" style={styles.iconBike} />
                     </View>
                     <View style={styles.iconContainer}>
-                        <Icon name="format-paint" style={styles.icon}/>
+                        <Icon name="format-paint" style={styles.iconPaint}/>
                     </View>
                     <View style={styles.iconContainer}>
-                        <Icon name="landscape" style={styles.icon}/>
+                        <Icon name="landscape" style={styles.iconLandscape}/>
                     </View>
                     <View style={styles.iconContainer}>
-                        <Icon name="pool" style={styles.icon}/>
+                        <Icon name="pool" style={styles.iconPool}/>
                     </View>
                     <View style={styles.iconContainer}>
-                        <Icon name="pets" style={styles.icon}/>
+                        <Icon name="pets" style={styles.iconPets}/>
                     </View>
                     <View style={styles.iconContainer}>
-                        <Icon name="local-dining" style={styles.icon}/>
+                        <Icon name="local-dining" style={styles.iconDinner}/>
                     </View>
                     {/* <View style={styles.iconContainer}>
                         <Icon name="local-florist" style={styles.icon}/>
