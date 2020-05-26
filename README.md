@@ -2,7 +2,9 @@
 To Do List created in React Native
 
 ## **Folders Structure**
-...
+- **assets** (images)
+- **components** (only reuseable part of code)
+- **screens** (all apps screens (pages))
 
 ## **Usage**
 
