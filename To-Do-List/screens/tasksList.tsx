@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { TouchableOpacity, FC, Text, View, StyleSheet, FlatList } from "react-native";
+import { FC, View, StyleSheet, FlatList, Alert } from "react-native";
 import Header from "../components/header";
 import TodoItem from "../components/todoItem";
 import AddTodo from "../components/addTodo";
-import NewTask from "./newTask";
 
 const styles = StyleSheet.create({
     tasksList: {
@@ -48,7 +47,7 @@ const TasksList: FC = ({ navigation }) => {
 
     const showCreateNewTask = () => {
 
-    }
+    };
 
     const [todos, setTodos] = useState([
         { text: "task1", key: "1" },
@@ -63,12 +62,20 @@ const TasksList: FC = ({ navigation }) => {
     };
 
     const submitHandler = (text) => {
-        setTodos((prevTodos) => {
-            return [
-                { text: text, key: Math.random().toString() },
-                ...prevTodos
-            ];
-        });
+
+        if(text.length > 2) {
+            setTodos((prevTodos) => {
+                return [
+                    { text: text, key: Math.random().toString() },
+                    ...prevTodos
+                ];
+            });
+        } else {
+            Alert.alert("OOPS!", "Todos must be over 2 chars long", [
+                {text: "Understood", onPress: () => console.log("alert closed")}
+            ]);
+        };
+
     };
 
     return (
@@ -83,9 +90,6 @@ const TasksList: FC = ({ navigation }) => {
                     )}
                 />
             </View>
-            {/* <TouchableOpacity onPress={createNewTask} style={styles.buttonContainer}>
-                <Text style={styles.button}>+</Text>
-            </TouchableOpacity> */}
         </View>
     );
 

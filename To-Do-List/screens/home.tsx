@@ -163,9 +163,6 @@ const Home: FC = () => {
                     <View style={styles.iconContainer}>
                         <Icon name="local-dining" style={styles.iconDinner}/>
                     </View>
-                    {/* <View style={styles.iconContainer}>
-                        <Icon name="local-florist" style={styles.icon}/>
-                    </View> */}
                 </View>
 
             </View>

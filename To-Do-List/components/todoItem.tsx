@@ -20,9 +20,9 @@ const styles = StyleSheet.create({
 
 const TodoItem: FC = ({ item, pressHandler }) => {
     return (
-        <TouchableOpacity onPress={() => pressHandler(item.key)}>
-            <Text style={styles.item}>{item.text}</Text>
+        <TouchableOpacity onPress={() => pressHandler(item.key)} style={styles.item}>
+            <Text>{item.text}</Text>
         </TouchableOpacity>
-    )
+    );
 };
 export default TodoItem;

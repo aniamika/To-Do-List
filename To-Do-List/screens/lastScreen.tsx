@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         shadowRadius: 2,
         elevation: 5,
     },
-})
+});
 
 const LastScreen: FC = ({ navigation }) => {
     return (
@@ -52,91 +52,157 @@ const LastScreen: FC = ({ navigation }) => {
                 <View style={styles.iconsContainer}>
                     <View style={styles.iconContainer}>
                         <Icon name="location-city" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="palette" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="school" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="spa" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
-                    <View style={styles.iconContainer}> 
+                    <View style={styles.iconContainer}>
                         <Icon name="train" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="videogame-asset" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="toys" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="time-to-leave" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="terrain" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="store" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="subway" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="smoking-rooms" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="snooze" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="shopping-cart" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="shopping-basket" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="settings-phone" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="sentiment-very-satisfied" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="rowing" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="restaurant" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="print" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="radio" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
                     <View style={styles.iconContainer}>
                         <Icon name="restaurant-menu" style={styles.icon}/>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis. Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.</Text>
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce blandit eros id odio vestibulum, nec sollicitudin mi sagittis.
+                            Nulla sit amet enim vitae ipsum interdum tempus nec sit amet elit.
+                        </Text>
                     </View>
 
                 </View>
@@ -144,5 +210,5 @@ const LastScreen: FC = ({ navigation }) => {
 
         </View>
     );
-}
+};
 export default LastScreen;

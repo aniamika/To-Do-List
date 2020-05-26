@@ -19,5 +19,5 @@ const NewTask: FC = ({ submitHandler }) => {
             <AddTodo submitHandler={submitHandler}/>
         </View>
     );
-}
+};
 export default NewTask;

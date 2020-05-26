@@ -27,6 +27,6 @@ const Header: FC = () => {
         <View style={styles.header}>
             <Text style={styles.title}>My Todos</Text>
         </View>
-    )
+    );
 };
 export default Header;
