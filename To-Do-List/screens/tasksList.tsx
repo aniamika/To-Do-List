@@ -45,14 +45,10 @@ const TasksList: FC = ({ navigation }) => {
         navigation.navigate("NewTask");
     };
 
-    const showCreateNewTask = () => {
-
-    };
-
     const [todos, setTodos] = useState([
-        { text: "task1", key: "1" },
-        { text: "task2", key: "2" },
-        { text: "task3", key: "3" },
+        // { text: "task1", key: "1" },
+        // { text: "task2", key: "2" },
+        // { text: "task3", key: "3" },
     ]);
 
     const pressHandler = (key) => {

@@ -8,7 +8,6 @@ import { FC } from "react-native";
 import Home from "./screens/home";
 import TasksList from "./screens/tasksList";
 import LastScreen from "./screens/lastScreen";
-import NewTask from "./screens/newTask";
 
 const HomeStack = createStackNavigator();
 const TasksListStack = createStackNavigator();
@@ -27,7 +26,6 @@ const TasksListStackScreen: FC = () => {
   return (
     <TasksListStack.Navigator>
       <TasksListStack.Screen name="TasksList" component={TasksList} />
-      <TasksListStack.Screen name="NewTask" component={NewTask} />
     </TasksListStack.Navigator>
   );
 };

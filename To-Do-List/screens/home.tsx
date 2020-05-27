@@ -135,8 +135,28 @@ const Home: FC = () => {
                     <Text style={styles.text}>Hello,</Text>
                     <Text style={styles.name}> {name} {person.surname}</Text>
                     <ScrollView>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia faucibus metus, ac auctor metus porta nec. Nam efficitur vehicula consequat. Pellentesque maximus porttitor justo ac bibendum. Integer facilisis feugiat ipsum nec aliquam. Ut ultrices eros nec lorem blandit pulvinar. Curabitur tempus iaculis vestibulum. Nullam ut libero volutpat, ultrices lectus at, porttitor sapien. Duis rutrum egestas nunc, sed feugiat risus porta nec. Curabitur eu quam lectus. Maecenas id ornare ante, id viverra tellus. Vestibulum placerat vel sapien id condimentum. Integer imperdiet lacus sed arcu molestie, sit amet tristique mi consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sapien felis, convallis ut nisl vel, ullamcorper iaculis odio. Integer vel mauris laoreet, sodales lorem vel, elementum leo. Etiam tempus lacus id felis finibus, vitae condimentum est blandit.
-                            Vivamus vitae condimentum tortor, et sollicitudin risus. Donec sagittis mauris a lorem tristique mattis ac a ligula. Vestibulum non lectus lectus. Cras molestie enim non nibh porttitor euismod. Fusce pellentesque urna risus, facilisis consequat dui porttitor a. Sed id condimentum nisi. Vestibulum non pellentesque metus, vel luctus ex. Maecenas mollis id nisl ut venenatis. Donec vulputate lacus mauris, ac tempus ante pretium quis. Praesent lobortis turpis cursus, imperdiet massa vel, placerat sapien. Ut nec neque id tellus pellentesque cursus. Nunc dapibus luctus porttito
+                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Integer lacinia faucibus metus, ac auctor metus porta nec.
+                            Nam efficitur vehicula consequat. Pellentesque maximus porttitor
+                            justo ac bibendum. Integer facilisis feugiat ipsum nec aliquam.
+                            Ut ultrices eros nec lorem blandit pulvinar. Curabitur tempus iaculis
+                            vestibulum. Nullam ut libero volutpat, ultrices lectus at, porttitor
+                            sapien. Duis rutrum egestas nunc, sed feugiat risus porta nec. Curabitur
+                            eu quam lectus. Maecenas id ornare ante, id viverra tellus. Vestibulum
+                            placerat vel sapien id condimentum. Integer imperdiet lacus sed arcu
+                            molestie, sit amet tristique mi consectetur. Class aptent taciti sociosqu
+                            ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sapien
+                            felis, convallis ut nisl vel, ullamcorper iaculis odio. Integer vel mauris
+                            laoreet, sodales lorem vel, elementum leo. Etiam tempus lacus id felis
+                            finibus, vitae condimentum est blandit.Vivamus vitae condimentum tortor,
+                            et sollicitudin risus. Donec sagittis mauris a lorem tristique mattis ac a
+                            ligula. Vestibulum non lectus lectus. Cras molestie enim non nibh porttitor
+                            euismod. Fusce pellentesque urna risus, facilisis consequat dui porttitor a.
+                            Sed id condimentum nisi. Vestibulum non pellentesque metus, vel luctus ex.
+                            Maecenas mollis id nisl ut venenatis. Donec vulputate lacus mauris, ac tempus
+                            ante pretium quis. Praesent lobortis turpis cursus, imperdiet massa vel,
+                            placerat sapien. Ut nec neque id tellus pellentesque cursus. Nunc dapibus
+                            luctus porttito.
                         </Text>
                     </ScrollView>
                 </View>
